@@ -1,0 +1,64 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Carousel Styles */
+.carousel-inner {
+  height: 100vh;
+}
+
+.carousel-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Centered caption */
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel-caption-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 90%;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
